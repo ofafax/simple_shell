@@ -1,10 +1,11 @@
 #include "shell.h"
 
 /**
- * builtin_exit - exit of the program with the status
- * @data: struct for the program's data
- * Return: zero if sucess, or other number if its declared in the arguments
+ * builtin_exit - exit of the progrm with the status
+ * @data: struct for the programs data
+ * Return: zero if sucess, or other number if its declrd in the argmnts
  */
+ 
 int builtin_exit(data_of_program *data)
 {
 	int q;
@@ -25,10 +26,11 @@ int builtin_exit(data_of_program *data)
 }
 
 /**
- * builtin_cd - change the current directory
- * @data: struct for the program's data
- * Return: zero if sucess, or other number if its declared in the arguments
+ * builtin_cd - change the current dir
+ * @data: struct for the programs data
+ * Return: zero if sucess, or other number if its declrd in the argmnts
  */
+ 
 int builtin_cd(data_of_program *data)
 {
 	char *dir_home = ("HOME", data), *dir_old = NULL;
@@ -63,11 +65,12 @@ int builtin_cd(data_of_program *data)
 }
 
 /**
- * set_work_directory - set the work directory
- * @data: struct for the program's data
+ * set_work_directory - set the working directory
+ * @data: struct for the programs data
  * @new_dir: path to be set as work directory
- * Return: zero if sucess, or other number if its declared in the arguments
+ * Return: zero if success, or other number if its declrd in the argmnts
  */
+ 
 int set_work_directory(data_of_program *data, char *new_dir)
 {
 	char old_dir[128] = {0};
@@ -90,10 +93,11 @@ int set_work_directory(data_of_program *data, char *new_dir)
 }
 
 /**
- * builtin_help - shows the environment where the shell runs
- * @data: struct for the program's data
- * Return: zero if sucess, or other number if its declared in the arguments
+ * builtin_help - the environment where the shell runs
+ * @data: struct for the progrms data
+ * Return: zero if success, or other number if its declrd in the argmnts
  */
+ 
 int builtin_help(data_of_program *data)
 {
 	int q, length = 0;
@@ -133,10 +137,11 @@ int builtin_help(data_of_program *data)
 }
 
 /**
- * builtin_alias - add, remove or show aliases
- * @data: struct for the program's data
- * Return: zero if sucess, or other number if its declared in the arguments
+ * builtin_alias - adds, removes or shows aliases
+ * @data: struct for the programs data
+ * Return: zero if success, or other number if its declrd in the argmnts
  */
+ 
 int builtin_alias(data_of_program *data)
 {
 	int q = 0;
