@@ -1,11 +1,12 @@
 #include "shell.h"
 
 /**
- * builtins_list - search for match and execute the associate builtin
- * @data: struct for the program's data
- * Return: Returns the return of the function executed is there is a match,
- * otherwise returns -1.
+ * builtins_list - searches for a match and execte the assciate builtin
+ * @data: struct for the programs data
+ * Return: Returns the return of the function executed if it is a match,
+ * otherwise returns -1
  **/
+ 
 int builtins_list(data_of_program *data)
 {
 	int q;
