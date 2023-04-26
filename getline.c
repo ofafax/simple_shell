@@ -1,11 +1,12 @@
 #include "shell.h"
 
 /**
-* _getline - read one line from the prompt.
-* @data: struct for the program's data
+* _getline - reads one line from the user prompt
+* @data: struct for the programs data
 *
-* Return: reading counting bytes.
+* Return: reading the counting bytes.
 */
+
 int _getline(data_of_program *data)
 {
 	char buff[BUFFER_SIZE] = {'\0'};
@@ -45,13 +46,14 @@ int _getline(data_of_program *data)
 
 
 /**
-* check_logic_ops - checks and split for && and || operators
-* @array_commands: array of the commands.
-* @i: index in the array_commands to be checked
-* @array_operators: array of the logical operators for each previous command
+* check_logic_ops - checks nd splits for && and || operators
+* @array_commands: array of the commnds
+* @i: index in the array_commands to be chckd
+* @array_operators: array of the logical operators for each previously usd commnd
 *
-* Return: index of the last command in the array_commands.
+* Return: index of the lst command in the array_commands
 */
+
 int check_logic_ops(char *array_commands[], int i, char array_operators[])
 {
 	char *temp = NULL;
