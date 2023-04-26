@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * builtin_env - shows the environment where the shell runs
- * @data: struct for the program's data
- * Return: zero if sucess, or other number if its declared in the arguments
+ * builtin_env - shows the environmnt where the shell runs
+ * @data: struct for the programs data
+ * Return: zero if success, or other number if its declard in the argmnts
  */
 int builtin_env(data_of_program *data)
 {
@@ -45,9 +45,9 @@ int builtin_env(data_of_program *data)
 }
 
 /**
- * builtin_set_env - ..
- * @data: struct for the program's data
- * Return: zero if sucess, or other number if its declared in the arguments
+ * builtin_set_env - ..shows set env
+ * @data: struct for the programs data
+ * Return: zero if sucess, or other number if its declard in the argmnts
  */
 int builtin_set_env(data_of_program *data)
 {
