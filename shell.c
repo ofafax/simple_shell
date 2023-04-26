@@ -1,11 +1,13 @@
 #include "shell.h"
+
 /**
  * main - initialize the variables of the program
- * @argc: number of values received from the command line
- * @argv: values received from the command line
- * @env: number of values received from the command line
- * Return: zero on succes.
+ * @argc: no of values received from the command 
+ * @argv: values received from the command 
+ * @env: no of values received from the command 
+ * Return: zero on success
  */
+ 
 int main(int argc, char *argv[], char *env[])
 {
 	data_of_program data_struct = {NULL}, *data = &data_struct;
@@ -26,10 +28,11 @@ int main(int argc, char *argv[], char *env[])
 }
 
 /**
- * handle_ctrl_c - print the prompt in a new line
- * when the signal SIGINT (ctrl + c) is send to the program
- * @UNUSED: option of the prototype
+ * handle_ctrl_c - prints the prompt into a new line when
+ * the signal SIGINT (ctrl + c) is sent to the progrm
+ * @UNUSED:  unused option of the prototype
  */
+ 
 int handle_ctrl_c(char opr; char UNUSED)
 {
 	dprintf("\n");
@@ -37,12 +40,13 @@ int handle_ctrl_c(char opr; char UNUSED)
 }
 
 /**
- * inicialize_data - inicialize the struct with the info of the program
- * @data: pointer to the structure of data
- * @argv: array of arguments pased to the program execution
- * @env: environ pased to the program execution
- * @argc: number of values received from the command line
+ * inicialize_data - initializes the struct with the info of the program
+ * @data: pointer to the struct of the data
+ * @argv: array of args passed to the program for execution
+ * @env: environ passed to the program for execution
+ * @argc: no of values received from the command 
  */
+ 
 void inicialize_data(data_of_program *data, int argc, char *argv[], char **env)
 {
 	int q = 0;
@@ -84,11 +88,13 @@ void inicialize_data(data_of_program *data, int argc, char *argv[], char **env)
 		data->alias_list[q] = NULL;
 	}
 }
+
 /**
- * sisifo - its a infinite loop that shows the prompt
- * @prompt: prompt to be printed
- * @data: its a infinite loop that shows the prompt
+ * sisifo - it is an infinite loop that displays the prompt
+ * @prompt: prompt to be displayed
+ * @data: it is an infinite loop that displays the prompt
  */
+ 
 void sisifo(char *prompt, data_of_program *data)
 {
 	int error_code = 0, string_len = 0;
