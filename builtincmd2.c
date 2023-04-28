@@ -10,8 +10,8 @@ int shellin_help(char **args, char __attribute__((__unused__)) **front);
 /**
  * shellin_alias - Builtin shellin command that either prints all aliases,
  * specific aliases, or sets an alias.
- * @args: An array of arguments
- * @front: A double pointer to the beginning of args
+ * @args: An array of arguments.
+ * @front: A double pointer to the beginning of args.
  *
  * Return: If an error occurs - -1, otherwise 0
  */
