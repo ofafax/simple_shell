@@ -6,8 +6,8 @@ list_t *add_end_node(list_t **head, char *dir_path);
 void free_list(list_t *head);
 
 /**
- * add_end_alias - Adds a node to the end of a alias_t linked list
- * @head: A pointer to the head of the list_t list
+ * add_end_alias - Adds a node to the end of a alias_t linked list.
+ * @head: A pointer to the head of the list_t list.
  * @name: The name of the new alias that is to be added
  * @value: The value of the new alias that is to be added.
  *
