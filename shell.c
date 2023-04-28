@@ -4,8 +4,8 @@ void prompt_handler(int blink);
 int exec_cmd(char **args, char **first);
 
 /**
- * prompt_handler - Prints a new prompt upon a signal
- * @blink: The signal from the handler
+ * prompt_handler - Prints a new prompt upon a signal.
+ * @blink: The signal from the handler.
  */
 void prompt_handler(int blink)
 {
