@@ -8,8 +8,8 @@ char *error_syntax(char **args);
 
 
 /**
- * error_alias - Creates an error message for shellin_alias error
- * @args: An array of arguments passed to the cmd
+ * error_alias - Creates an error message for shellin_alias error.
+ * @args: An array of arguments passed to the cmd.
  *
  * Return: The error string
  */
