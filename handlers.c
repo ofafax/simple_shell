@@ -5,8 +5,8 @@ ssize_t get_new_length(char *line);
 void logic_operator(char *line, ssize_t *new_length);
 
 /**
- * partition_line - Partitions a line read from standard input as needed
- * @line: A pointer to a line read from standard input
+ * partition_line - Partitions a line read from standard input as needed.
+ * @line: A pointer to a line read from standard input.
  * @length: The length of line.
  *
  * Description: Spaces are inserted to separate ";", "||",
